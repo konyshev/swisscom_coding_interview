@@ -1,0 +1,4 @@
+{"_id":{"$oid":"5c68fbc34bca806e4a4fb3c4"},"meta_name":"NetCtacker","host":"hp1.swisscom.com","ip":"10.0.0.1","contact":{"mail":"nc@nc.com","tel":"555-555"}}
+{"_id":{"$oid":"5c68fc0e4bca806e4a4fb3d7"},"meta_name":"TIBCO","host":"tibco1.swisscom.com","ip":"10.0.0.2","contact":{"mail":"tb@tb.com","tel":"112-112"}}
+{"_id":{"$oid":"5c68fc1c4bca806e4a4fb3da"},"meta_name":"NPS","host":"nps1.swisscom.com","ip":"10.0.0.3","contact":{"mail":"nps@nps.com","tel":"10-10-10"}}
+{"_id":{"$oid":"5c68fc2f4bca806e4a4fb3dc"},"meta_name":"PTA","host":"pta1.swisscom.com","ip":"10.0.0.4","contact":{"mail":"pta@pta.com","tel":"90-90-90"}}

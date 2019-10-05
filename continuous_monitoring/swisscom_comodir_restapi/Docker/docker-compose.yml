@@ -1,0 +1,26 @@
+version: '2.3'
+services:
+    mongodb:
+        build:
+          context: .
+          dockerfile: Dockerfile
+        container_name: "container_mongodb"
+        environment:
+          - MONGO_DATA_DIR=/data/db
+          - MONGO_LOG_DIR=/dev/null
+#        volumes:
+#          - ./data/db:/data/db
+#          - ./db_backup:/data/db_backup
+        ports:
+            - 27017:27017
+        networks:
+          custom_network:
+            ipv4_address: 172.22.0.2
+        command: mongod --smallfiles --logpath=/dev/null # --quiet
+networks:
+  custom_network:
+    name: container_swisscom_cloud
+    driver: bridge
+    ipam:
+      config:
+      - subnet: 172.22.0.0/16
